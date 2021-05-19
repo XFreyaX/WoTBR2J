@@ -1,10 +1,9 @@
 # uncompyle6 version 3.7.4
 # Python bytecode 2.7 (62211)
 # Decompiled from: Python 2.7.17 (default, Sep 30 2020, 13:38:04) 
-# [GCC 7.5.0]
 # Embedded file name: scripts/common/DictPackers.py
 import copy
-#from debug_utils import LOG_ERROR
+# from debug_utils import LOG_ERROR
 from binascii import crc32
 from functools import partial
 
@@ -84,7 +83,7 @@ class DictPacker(object):
                         v = None
                 l[index + 1] = v
             except Exception as e:
-                #LOG_ERROR('error while packing:', index, metaEntry, str(e))
+                # LOG_ERROR('error while packing:', index, metaEntry, str(e))
                 raise
 
         return l

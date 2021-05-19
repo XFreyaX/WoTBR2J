@@ -3,23 +3,23 @@
 # Decompiled from: Python 2.7.17 (default, Sep 30 2020, 13:38:04) 
 # Embedded file name: scripts/common/battle_results/battle_results_common.py
 from battle_results_constants import BATTLE_RESULT_ENTRY_TYPE as ENTRY_TYPE
-#from constants import FLAG_ACTION
+# from constants import FLAG_ACTION
 class FLAG_ACTION:
     PICKED_UP_FROM_BASE = 0
     PICKED_UP_FROM_GROUND = 1
     CAPTURED = 2
     LOST = 3
     RANGE = (PICKED_UP_FROM_BASE, PICKED_UP_FROM_GROUND, CAPTURED, LOST)
-
-
+    
+    
 from DictPackers import DictPacker, SimpleDictPacker, DeltaPacker, ValueReplayPacker, roundToInt
-#from items.vehicles import VEHICLE_DEVICE_TYPE_NAMES, VEHICLE_TANKMAN_TYPE_NAMES
+# from items.vehicles import VEHICLE_DEVICE_TYPE_NAMES, VEHICLE_TANKMAN_TYPE_NAMES
 VEHICLE_DEVICE_TYPE_NAMES = (
  'engine', 'ammoBay', 'fuelTank', 'radio', 'track', 'gun', 'turretRotator', 'surveyingDevice', 'STUN_PLACEHOLDER',
  'wheel')
 VEHICLE_TANKMAN_TYPE_NAMES = (
  'commander', 'driver', 'radioman', 'gunner', 'loader')
-#from items.badges_common import BadgesCommon
+ # from items.badges_common import BadgesCommon
 class BadgesCommon(object):
     @staticmethod
     def selectedBadgesEmpty():
